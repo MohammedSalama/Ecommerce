@@ -463,7 +463,7 @@
                                         <li class="sub-mega-menu sub-mega-menu-width-34">
                                             <div class="menu-banner-wrap">
                                                 <a href="product-details.html"><img
-                                                        src="assets/imgs/banner/menu-banner.jpg"
+                                                        src="{{ asset('layouts/assets/imgs/banner/menu-banner.jpg') }}"
                                                         alt="Surfside Media"></a>
                                                 <div class="menu-banner-content">
                                                     <h4>Hot deals</h4>

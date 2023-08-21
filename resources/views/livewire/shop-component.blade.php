@@ -3,7 +3,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="{{ URL::route('home.index') }}" rel="nofollow">Home</a>
+                    <a href="{{ route('home.index') }}" rel="nofollow">Home</a>
                     <span></span> Shop
                 </div>
             </div>
@@ -63,7 +63,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="product-details.html">
+                                            <a href="{{ route('product.details',['slug'=>$product->slug]) }}">
                                                 <img class="default-img"
                                                      src="{{ asset('layouts/assets/imgs/shop/product-')}}{{ $product->id }}-1.jpg"
                                                      alt="{{ $product->name }}">
@@ -87,9 +87,9 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="{{ URL::route('shop') }}">Music</a>
+                                            <a href="{{ route('shop') }}">Music</a>
                                         </div>
-                                        <h2><a href="product-details.html">{{ $product->name }}</a></h2>
+                                        <h2><a href="{{ route('product.details',['slug'=>$product->slug]) }}">{{ $product->name }}</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>90%</span>
@@ -101,7 +101,7 @@
                                         </div>
                                         <div class="product-action-1 show">
                                             <a aria-label="Add To Cart" class="action-btn hover-up"
-                                               href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
+                                               href="{{ route('shop.cart') }}.php"><i class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -122,13 +122,13 @@
                         <div class="widget-category mb-30">
                             <h5 class="section-title style-1 mb-30 wow fadeIn animated">Category</h5>
                             <ul class="categories">
-                                <li><a href="{{ URL::route('shop') }}">Shoes & Bags</a></li>
-                                <li><a href="{{ URL::route('shop') }}">Blouses & Shirts</a></li>
-                                <li><a href="{{ URL::route('shop') }}">Dresses</a></li>
-                                <li><a href="{{ URL::route('shop') }}">Swimwear</a></li>
-                                <li><a href="{{ URL::route('shop') }}">Beauty</a></li>
-                                <li><a href="{{ URL::route('shop') }}">Jewelry & Watch</a></li>
-                                <li><a href="{{ URL::route('shop') }}">Accessories</a></li>
+                                <li><a href="{{ route('shop') }}">Shoes & Bags</a></li>
+                                <li><a href="{{ route('shop') }}">Blouses & Shirts</a></li>
+                                <li><a href="{{ route('shop') }}">Dresses</a></li>
+                                <li><a href="{{ route('shop') }}">Swimwear</a></li>
+                                <li><a href="{{ route('shop') }}">Beauty</a></li>
+                                <li><a href="{{ route('shop') }}">Jewelry & Watch</a></li>
+                                <li><a href="{{ route('shop') }}">Accessories</a></li>
                             </ul>
                         </div>
                         <!-- Fillter By Price -->
@@ -185,7 +185,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="{{ URL::route('shop') }}" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
+                            <a href="{{ route('shop') }}" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
                         </div>
                         <!-- Product sidebar Widget -->
                         <div class="sidebar-widget product-sidebar  mb-30 p-30 bg-grey border-radius-10">
@@ -195,7 +195,7 @@
                             </div>
                             <div class="single-post clearfix">
                                 <div class="image">
-                                    <img src="{{ URL::asset('layouts/assets/imgs/shop/thumbnail-3.jpg') }}" alt="#">
+                                    <img src="{{ asset('layouts/assets/imgs/shop/thumbnail-3.jpg') }}" alt="#">
                                 </div>
                                 <div class="content pt-10">
                                     <h5><a href="product-details.html">Chen Cardigan</a></h5>
@@ -207,7 +207,7 @@
                             </div>
                             <div class="single-post clearfix">
                                 <div class="image">
-                                    <img src="{{ URL::asset('layouts/assets/imgs/shop/thumbnail-4.jpg') }}" alt="#">
+                                    <img src="{{ asset('layouts/assets/imgs/shop/thumbnail-4.jpg') }}" alt="#">
                                 </div>
                                 <div class="content pt-10">
                                     <h6><a href="product-details.html">Chen Sweater</a></h6>
@@ -219,7 +219,7 @@
                             </div>
                             <div class="single-post clearfix">
                                 <div class="image">
-                                    <img src="{{ URL::asset('layouts/assets/imgs/shop/thumbnail-5.jpg') }}" alt="#">
+                                    <img src="{{ asset('layouts/assets/imgs/shop/thumbnail-5.jpg') }}" alt="#">
                                 </div>
                                 <div class="content pt-10">
                                     <h6><a href="product-details.html">Colorful Jacket</a></h6>
@@ -231,11 +231,11 @@
                             </div>
                         </div>
                         <div class="banner-img wow fadeIn mb-45 animated d-lg-block d-none">
-                            <img src="{{ URL::asset('layouts/assets/imgs/banner/banner-11.jpg') }}" alt="">
+                            <img src="{{ asset('layouts/assets/imgs/banner/banner-11.jpg') }}" alt="">
                             <div class="banner-text">
                                 <span>Women Zone</span>
                                 <h4>Save 17% on <br>Office Dress</h4>
-                                <a href="{{ URL::route('shop') }}">Shop Now <i class="fi-rs-arrow-right"></i></a>
+                                <a href="{{ route('shop') }}">Shop Now <i class="fi-rs-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>

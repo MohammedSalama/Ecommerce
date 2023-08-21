@@ -3,7 +3,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="{{ URL::route('home.index') }}" rel="nofollow">Home</a>
+                    <a href="{{ route('home.index') }}" rel="nofollow">Home</a>
                     <span></span> Shop
                     <span></span> Your Cart
                 </div>
@@ -28,7 +28,7 @@
                                 <tbody>
                                 <tr>
                                     <td class="image product-thumbnail"><img
-                                            src="{{ URL::asset('layouts/assets/imgs/shop/product-1-2.jpg') }}" alt="#">
+                                            src="{{ asset('layouts/assets/imgs/shop/product-1-2.jpg') }}" alt="#">
                                     </td>
                                     <td class="product-des product-name">
                                         <h5 class="product-name"><a href="product-details.html">J.Crew Mercantile
@@ -52,7 +52,7 @@
                                 </tr>
                                 <tr>
                                     <td class="image"><img
-                                            src="{{ URL::asset('layouts/assets/imgs/shop/product-11-2.jpg') }}" alt="#">
+                                            src="{{ asset('layouts/assets/imgs/shop/product-11-2.jpg') }}" alt="#">
                                     </td>
                                     <td class="product-des">
                                         <h5 class="product-name"><a href="product-details.html">Amazon Essentials
@@ -76,7 +76,7 @@
                                 </tr>
                                 <tr>
                                     <td class="image"><img
-                                            src="{{ URL::asset('layouts/assets/imgs/shop/product-6-1.jpg') }}" alt="#">
+                                            src="{{ asset('layouts/assets/imgs/shop/product-6-1.jpg') }}" alt="#">
                                     </td>
                                     <td class="product-des">
                                         <h5 class="product-name"><a href="product-details.html">Amazon Brand - Daily
