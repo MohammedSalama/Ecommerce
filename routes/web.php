@@ -18,9 +18,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('auth.login');
+        redirect()->route('home.index');
+});
 
 Route::middleware([
     'auth:sanctum',
