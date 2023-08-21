@@ -142,7 +142,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Clothing</a>
+                                            <a href="{{ URL::route('shop') }}">Clothing</a>
                                         </div>
                                         <h2><a href="product-details.html">Colorful Pattern Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -155,7 +155,7 @@
                                             <span class="old-price">$245.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="shop.cart"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -185,7 +185,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Clothing</a>
+                                            <a href="{{ URL::route('shop') }}">Clothing</a>
                                         </div>
                                         <h2><a href="product-details.html">Plain Color Pocket Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -198,7 +198,7 @@
                                             <span class="old-price">$255.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -228,7 +228,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Shirts</a>
+                                            <a href="{{ URL::route('shop') }}">Shirts</a>
                                         </div>
                                         <h2><a href="product-details.html">Vintage Floral Oil Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -241,7 +241,7 @@
                                             <span class="old-price">$445.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -271,7 +271,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Clothing</a>
+                                            <a href="{{ URL::route('shop') }}">Clothing</a>
                                         </div>
                                         <h2><a href="product-details.html">Colorful Hawaiian Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -284,7 +284,7 @@
                                             <span class="old-price">$235.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -314,7 +314,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Shirt</a>
+                                            <a href="{{ URL::route('shop') }}">Shirt</a>
                                         </div>
                                         <h2><a href="product-details.html">Flowers Sleeve Lapel Shirt</a></h2>
                                         <div class="rating-result" title="90%">
@@ -327,7 +327,7 @@
                                             <span class="old-price">$45.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -357,7 +357,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Shirts</a>
+                                            <a href="{{ URL::route('shop') }}">Shirts</a>
                                         </div>
                                         <h2><a href="product-details.html">Ethnic Floral Casual Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -370,7 +370,7 @@
                                             <span class="old-price">$245.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -400,7 +400,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Shoes</a>
+                                            <a href="{{ URL::route('shop') }}">Shoes</a>
                                         </div>
                                         <h2><a href="product-details.html">Stitching Hole Sandals</a></h2>
                                         <div class="rating-result" title="90%">
@@ -412,7 +412,7 @@
                                             <span>$1275.85 </span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -439,7 +439,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Shirt</a>
+                                            <a href="{{ URL::route('shop') }}">Shirt</a>
                                         </div>
                                         <h2><a href="product-details.html">Mens Porcelain Shirt</a></h2>
                                         <div class="rating-result" title="90%">
@@ -452,7 +452,7 @@
                                             <span class="old-price">$245.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -488,7 +488,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Donec </a>
+                                            <a href="{{ URL::route('shop') }}">Donec </a>
                                         </div>
                                         <h2><a href="product-details.html">Lorem ipsum dolor</a></h2>
                                         <div class="rating-result" title="90%">
@@ -501,7 +501,7 @@
                                             <span class="old-price">$245.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -531,7 +531,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="{{ URL::route('shop') }}">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Sed tincidunt interdum</a></h2>
                                         <div class="rating-result" title="90%">
@@ -544,7 +544,7 @@
                                             <span class="old-price">$255.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -574,7 +574,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Watch</a>
+                                            <a href="{{ URL::route('shop') }}">Watch</a>
                                         </div>
                                         <h2><a href="product-details.html">Fusce metus orci</a></h2>
                                         <div class="rating-result" title="90%">
@@ -587,7 +587,7 @@
                                             <span class="old-price">$445.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -617,7 +617,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="{{ URL::route('shop') }}">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Integer venenatis libero</a></h2>
                                         <div class="rating-result" title="90%">
@@ -630,7 +630,7 @@
                                             <span class="old-price">$235.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -660,7 +660,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Speaker</a>
+                                            <a href="{{ URL::route('shop') }}">Speaker</a>
                                         </div>
                                         <h2><a href="product-details.html">Cras tempor orci id</a></h2>
                                         <div class="rating-result" title="90%">
@@ -673,7 +673,7 @@
                                             <span class="old-price">$45.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -703,7 +703,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Camera</a>
+                                            <a href="{{ URL::route('shop') }}">Camera</a>
                                         </div>
                                         <h2><a href="product-details.html">Nullam cursus mi qui</a></h2>
                                         <div class="rating-result" title="90%">
@@ -716,7 +716,7 @@
                                             <span class="old-price">$245.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -746,7 +746,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Phone</a>
+                                            <a href="{{ URL::route('shop') }}">Phone</a>
                                         </div>
                                         <h2><a href="product-details.html">Fusce fringilla ultrices</a></h2>
                                         <div class="rating-result" title="90%">
@@ -758,7 +758,7 @@
                                             <span>$1275.85 </span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -785,7 +785,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Accessories </a>
+                                            <a href="{{ URL::route('shop') }}">Accessories </a>
                                         </div>
                                         <h2><a href="product-details.html">Sed sollicitudin est</a></h2>
                                         <div class="rating-result" title="90%">
@@ -798,7 +798,7 @@
                                             <span class="old-price">$245.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -834,7 +834,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="{{ URL::route('shop') }}">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Donec ut nisl rutrum</a></h2>
                                         <div class="rating-result" title="90%">
@@ -847,7 +847,7 @@
                                             <span class="old-price">$245.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -877,7 +877,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="{{ URL::route('shop') }}">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Nullam dapibus pharetra</a></h2>
                                         <div class="rating-result" title="90%">
@@ -890,7 +890,7 @@
                                             <span class="old-price">$255.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -920,7 +920,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Watch</a>
+                                            <a href="{{ URL::route('shop') }}">Watch</a>
                                         </div>
                                         <h2><a href="product-details.html">Morbi dictum finibus</a></h2>
                                         <div class="rating-result" title="90%">
@@ -933,7 +933,7 @@
                                             <span class="old-price">$445.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -963,7 +963,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="{{ URL::route('shop') }}">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Nunc volutpat massa</a></h2>
                                         <div class="rating-result" title="90%">
@@ -976,7 +976,7 @@
                                             <span class="old-price">$235.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -1006,7 +1006,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Speaker</a>
+                                            <a href="{{ URL::route('shop') }}">Speaker</a>
                                         </div>
                                         <h2><a href="product-details.html">Nullam ultricies luctus</a></h2>
                                         <div class="rating-result" title="90%">
@@ -1019,7 +1019,7 @@
                                             <span class="old-price">$45.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -1049,7 +1049,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Camera</a>
+                                            <a href="{{ URL::route('shop') }}">Camera</a>
                                         </div>
                                         <h2><a href="product-details.html">Nullam mattis enim</a></h2>
                                         <div class="rating-result" title="90%">
@@ -1062,7 +1062,7 @@
                                             <span class="old-price">$245.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -1092,7 +1092,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Phone</a>
+                                            <a href="{{ URL::route('shop') }}">Phone</a>
                                         </div>
                                         <h2><a href="product-details.html">Vivamus sollicitudin</a></h2>
                                         <div class="rating-result" title="90%">
@@ -1104,7 +1104,7 @@
                                             <span>$1275.85 </span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -1131,7 +1131,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Accessories </a>
+                                            <a href="{{ URL::route('shop') }}">Accessories </a>
                                         </div>
                                         <h2><a href="product-details.html"> Donec ut nisl rutrum</a></h2>
                                         <div class="rating-result" title="90%">
@@ -1144,7 +1144,7 @@
                                             <span class="old-price">$245.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="cart.html"><i
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="{{ URL::route('shop.cart') }}"><i
                                                     class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
@@ -1165,7 +1165,7 @@
                     <div class="banner-text d-md-block d-none">
                         <h4 class="mb-15 mt-40 text-brand">Repair Services</h4>
                         <h1 class="fw-600 mb-20">We're an Apple <br>Authorised Service Provider</h1>
-                        <a href="shop.html" class="btn">Learn More <i class="fi-rs-arrow-right"></i></a>
+                        <a href="{{ URL::route('shop') }}" class="btn">Learn More <i class="fi-rs-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1179,51 +1179,51 @@
                     <div class="carausel-6-columns" id="carausel-6-columns">
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-1.jpg') }}" alt=""></a>
+                                <a href=""><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-1.jpg') }}" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">T-Shirt</a></h5>
+                            <h5><a href="{{ URL::route('shop') }}">T-Shirt</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"> <img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-2.jpg') }}" alt=""></a>
+                                <a href="{{ URL::route('shop') }}"> <img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-2.jpg') }}" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Bags</a></h5>
+                            <h5><a href="{{ URL::route('shop') }}">Bags</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-3.jpg') }}" alt=""></a>
+                                <a href="{{ URL::route('shop') }}"><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-3.jpg') }}" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Sandan</a></h5>
+                            <h5><a href="{{ URL::route('shop') }}">Sandan</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-4.jpg') }}" alt=""></a>
+                                <a href="{{ URL::route('shop') }}"><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-4.jpg') }}" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Scarf Cap</a></h5>
+                            <h5><a href="{{ URL::route('shop') }}">Scarf Cap</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-5.jpg') }}" alt=""></a>
+                                <a href="{{ URL::route('shop') }}"><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-5.jpg') }}" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Shoes</a></h5>
+                            <h5><a href="{{ URL::route('shop') }}">Shoes</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-6.jpg') }}" alt=""></a>
+                                <a href="{{ URL::route('shop') }}"><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-6.jpg') }}" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Pillowcase</a></h5>
+                            <h5><a href="{{ URL::route('shop') }}">Pillowcase</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-7.jpg') }}" alt=""></a>
+                                <a href="{{ URL::route('shop') }}"><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-7.jpg') }}" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Jumpsuits</a></h5>
+                            <h5><a href="{{ URL::route('shop') }}">Jumpsuits</a></h5>
                         </div>
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <a href="shop.html"><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-8.jpg') }}" alt=""></a>
+                                <a href="{{ URL::route('shop') }}"><img src="{{ URL::asset('layouts/assets/imgs/shop/category-thumb-8.jpg') }}" alt=""></a>
                             </figure>
-                            <h5><a href="shop.html">Hats</a></h5>
+                            <h5><a href="{{ URL::route('shop') }}">Hats</a></h5>
                         </div>
                     </div>
                 </div>
@@ -1238,7 +1238,7 @@
                             <div class="banner-text">
                                 <span>Smart Offer</span>
                                 <h4>Save 20% on <br>Woman Bag</h4>
-                                <a href="shop.html">Shop Now <i class="fi-rs-arrow-right"></i></a>
+                                <a href="{{ URL::route('shop') }}">Shop Now <i class="fi-rs-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1248,7 +1248,7 @@
                             <div class="banner-text">
                                 <span>Sale off</span>
                                 <h4>Great Summer <br>Collection</h4>
-                                <a href="shop.html">Shop Now <i class="fi-rs-arrow-right"></i></a>
+                                <a href="{{ URL::route('shop') }}">Shop Now <i class="fi-rs-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1258,7 +1258,7 @@
                             <div class="banner-text">
                                 <span>New Arrivals</span>
                                 <h4>Shop Today’s <br>Deals & Offers</h4>
-                                <a href="shop.html">Shop Now <i class="fi-rs-arrow-right"></i></a>
+                                <a href="{{ URL::route('shop') }}">Shop Now <i class="fi-rs-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>

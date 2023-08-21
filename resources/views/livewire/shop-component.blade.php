@@ -3,7 +3,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="index.html" rel="nofollow">Home</a>
+                    <a href="{{ URL::route('home.index') }}" rel="nofollow">Home</a>
                     <span></span> Shop
                 </div>
             </div>
@@ -86,7 +86,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="{{ URL::route('shop') }}">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Colorful Pattern Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -133,7 +133,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="{{ URL::route('shop') }}">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Cartoon Astronaut T-Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -180,7 +180,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Watch</a>
+                                            <a href="{{ URL::route('shop') }}">Watch</a>
                                         </div>
                                         <h2><a href="product-details.html">Plain Striola Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -227,7 +227,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="{{ URL::route('shop') }}">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Landscape Painting Shirt</a></h2>
                                         <div class="rating-result" title="90%">
@@ -274,7 +274,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Speaker</a>
+                                            <a href="{{ URL::route('shop') }}">Speaker</a>
                                         </div>
                                         <h2><a href="product-details.html">Letter Print T-Shirt</a></h2>
                                         <div class="rating-result" title="90%">
@@ -321,7 +321,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Camera</a>
+                                            <a href="{{ URL::route('shop') }}">Camera</a>
                                         </div>
                                         <h2><a href="product-details.html">Element Pattern Print Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -368,7 +368,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Phone</a>
+                                            <a href="{{ URL::route('shop') }}">Phone</a>
                                         </div>
                                         <h2><a href="product-details.html">Vintage Henley Shirt</a></h2>
                                         <div class="rating-result" title="90%">
@@ -411,7 +411,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Accessories </a>
+                                            <a href="{{ URL::route('shop') }}">Accessories </a>
                                         </div>
                                         <h2><a href="product-details.html">Cotton Leaf Printed</a></h2>
                                         <div class="rating-result" title="90%">
@@ -455,7 +455,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Accessories </a>
+                                            <a href="{{ URL::route('shop') }}">Accessories </a>
                                         </div>
                                         <h2><a href="product-details.html">Cotton Leaf Printed</a></h2>
                                         <div class="rating-result" title="90%">
@@ -502,7 +502,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="{{ URL::route('shop') }}">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Colorful Pattern Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -549,7 +549,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Music</a>
+                                            <a href="{{ URL::route('shop') }}">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">Cartoon Astronaut T-Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -596,7 +596,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Watch</a>
+                                            <a href="{{ URL::route('shop') }}">Watch</a>
                                         </div>
                                         <h2><a href="product-details.html">Plain Striola Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -639,13 +639,13 @@
                         <div class="widget-category mb-30">
                             <h5 class="section-title style-1 mb-30 wow fadeIn animated">Category</h5>
                             <ul class="categories">
-                                <li><a href="shop.html">Shoes & Bags</a></li>
-                                <li><a href="shop.html">Blouses & Shirts</a></li>
-                                <li><a href="shop.html">Dresses</a></li>
-                                <li><a href="shop.html">Swimwear</a></li>
-                                <li><a href="shop.html">Beauty</a></li>
-                                <li><a href="shop.html">Jewelry & Watch</a></li>
-                                <li><a href="shop.html">Accessories</a></li>
+                                <li><a href="{{ URL::route('shop') }}">Shoes & Bags</a></li>
+                                <li><a href="{{ URL::route('shop') }}">Blouses & Shirts</a></li>
+                                <li><a href="{{ URL::route('shop') }}">Dresses</a></li>
+                                <li><a href="{{ URL::route('shop') }}">Swimwear</a></li>
+                                <li><a href="{{ URL::route('shop') }}">Beauty</a></li>
+                                <li><a href="{{ URL::route('shop') }}">Jewelry & Watch</a></li>
+                                <li><a href="{{ URL::route('shop') }}">Accessories</a></li>
                             </ul>
                         </div>
                         <!-- Fillter By Price -->
@@ -702,7 +702,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="shop.html" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
+                            <a href="{{ URL::route('shop') }}" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
                         </div>
                         <!-- Product sidebar Widget -->
                         <div class="sidebar-widget product-sidebar  mb-30 p-30 bg-grey border-radius-10">
@@ -752,7 +752,7 @@
                             <div class="banner-text">
                                 <span>Women Zone</span>
                                 <h4>Save 17% on <br>Office Dress</h4>
-                                <a href="shop.html">Shop Now <i class="fi-rs-arrow-right"></i></a>
+                                <a href="{{ URL::route('shop') }}">Shop Now <i class="fi-rs-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>

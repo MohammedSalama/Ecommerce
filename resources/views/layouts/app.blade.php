@@ -29,9 +29,12 @@
                                 <a class="language-dropdown-active" href="#"> <i class="fi-rs-world"></i> English <i
                                         class="fi-rs-angle-small-down"></i></a>
                                 <ul class="language-dropdown">
-                                    <li><a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/flag-fr.png') }}" alt="">Français</a></li>
-                                    <li><a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/flag-dt.png') }}" alt="">Deutsch</a></li>
-                                    <li><a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/flag-ru.png') }}" alt="">Pусский</a></li>
+                                    <li><a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/flag-fr.png') }}"
+                                                         alt="">Français</a></li>
+                                    <li><a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/flag-dt.png') }}"
+                                                         alt="">Deutsch</a></li>
+                                    <li><a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/flag-ru.png') }}"
+                                                         alt="">Pусский</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -41,19 +44,35 @@
                     <div class="text-center">
                         <div id="news-flash" class="d-inline-block">
                             <ul>
-                                <li>Get great devices up to 50% off <a href="shop.html">View details</a></li>
+                                <li>Get great devices up to 50% off <a href="{{ URL::route('shop') }}">View details</a>
+                                </li>
                                 <li>Supper Value Deals - Save more with coupons</li>
-                                <li>Trendy 25silver jewelry, save up 35% off today <a href="shop.html">Shop now</a></li>
+                                <li>Trendy 25silver jewelry, save up 35% off today <a href="{{ URL::route('shop') }}">Shop
+                                        now</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4">
                     <div class="header-info header-info-right">
-                        <ul>
-                            <li><i class="fi-rs-key"></i><a href="login.html">Log In </a> / <a href="register.html">Sign
-                                    Up</a></li>
-                        </ul>
+                        @auth
+                            <ul>
+                                <li><i class="fi-rs-user"></i> {{ Auth::user()->name }} /
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                        <a href="{{ route('logout') }}"
+                                           onclick="event.preventDefault(); this.closest('form').submit();"> Logout
+                                        </a>
+                                    </form>
+                                </li>
+                            </ul>
+                        @else
+                            <ul>
+                                <li><i class="fi-rs-key"></i><a href="{{ route('login') }}">Log In </a> / <a
+                                        href="{{ route('register') }}">Sign
+                                        Up</a></li>
+                            </ul>
+                        @endauth
                     </div>
                 </div>
             </div>
@@ -63,7 +82,8 @@
         <div class="container">
             <div class="header-wrap">
                 <div class="logo logo-width-1">
-                    <a href="index.html"><img src="{{ URL::asset('layouts/assets/imgs/logo/logo.png') }}" alt="logo"></a>
+                    <a href="{{ URL::route('home.index') }}"><img
+                            src="{{ URL::asset('layouts/assets/imgs/logo/logo.png') }}" alt="logo"></a>
                 </div>
                 <div class="header-right">
                     <div class="search-style-1">
@@ -81,8 +101,9 @@
                                 </a>
                             </div>
                             <div class="header-action-icon-2">
-                                <a class="mini-cart-icon" href="cart.html">
-                                    <img alt="Surfside Media" src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-cart.svg') }}">
+                                <a class="mini-cart-icon" href="{{ URL::route('shop.cart') }}">
+                                    <img alt="Surfside Media"
+                                         src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-cart.svg') }}">
                                     <span class="pro-count blue">2</span>
                                 </a>
                                 <div class="cart-dropdown-wrap cart-dropdown-hm2">
@@ -119,8 +140,8 @@
                                             <h4>Total <span>$4000.00</span></h4>
                                         </div>
                                         <div class="shopping-cart-button">
-                                            <a href="cart.html" class="outline">View cart</a>
-                                            <a href="checkout.html">Checkout</a>
+                                            <a href="{{ URL::route('shop.cart') }}" class="outline">View cart</a>
+                                            <a href="{{ URL::route('shop.checkout') }}">Checkout</a>
                                         </div>
                                     </div>
                                 </div>
@@ -135,7 +156,8 @@
         <div class="container">
             <div class="header-wrap header-space-between position-relative">
                 <div class="logo logo-width-1 d-block d-lg-none">
-                    <a href="index.html"><img src="{{ URL::asset('layouts/assets/imgs/logo/logo.png') }}" alt="logo"></a>
+                    <a href="{{ URL::route('home.index') }}"><img
+                            src="{{ URL::asset('layouts/assets/imgs/logo/logo.png') }}" alt="logo"></a>
                 </div>
                 <div class="header-nav d-none d-lg-flex">
                     <div class="main-categori-wrap d-none d-lg-block">
@@ -145,7 +167,8 @@
                         <div class="categori-dropdown-wrap categori-dropdown-active-large">
                             <ul>
                                 <li class="has-children">
-                                    <a href="shop.html"><i class="surfsidemedia-font-dress"></i>Women's Clothing</a>
+                                    <a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-dress"></i>Women's
+                                        Clothing</a>
                                     <div class="dropdown-menu">
                                         <ul class="mega-menu d-lg-flex">
                                             <li class="mega-menu-col col-lg-7">
@@ -196,7 +219,9 @@
                                             </li>
                                             <li class="mega-menu-col col-lg-5">
                                                 <div class="header-banner2">
-                                                    <img src="{{ URL::asset('layouts/assets/imgs/banner/menu-banner-2.jpg') }}" alt="menu_banner1">
+                                                    <img
+                                                        src="{{ URL::asset('layouts/assets/imgs/banner/menu-banner-2.jpg') }}"
+                                                        alt="menu_banner1">
                                                     <div class="banne_info">
                                                         <h6>10% Off</h6>
                                                         <h4>New Arrival</h4>
@@ -204,7 +229,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="header-banner2">
-                                                    <img src="{{ URL::asset('layouts/assets/imgs/banner/menu-banner-3.jpg') }}" alt="menu_banner2">
+                                                    <img
+                                                        src="{{ URL::asset('layouts/assets/imgs/banner/menu-banner-3.jpg') }}"
+                                                        alt="menu_banner2">
                                                     <div class="banne_info">
                                                         <h6>15% Off</h6>
                                                         <h4>Hot Deals</h4>
@@ -216,7 +243,8 @@
                                     </div>
                                 </li>
                                 <li class="has-children">
-                                    <a href="shop.html"><i class="surfsidemedia-font-tshirt"></i>Men's Clothing</a>
+                                    <a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-tshirt"></i>Men's
+                                        Clothing</a>
                                     <div class="dropdown-menu">
                                         <ul class="mega-menu d-lg-flex">
                                             <li class="mega-menu-col col-lg-7">
@@ -265,7 +293,9 @@
                                             </li>
                                             <li class="mega-menu-col col-lg-5">
                                                 <div class="header-banner2">
-                                                    <img src="{{ URL::asset('layouts/assets/imgs/banner/menu-banner-4.jpg') }}" alt="menu_banner1">
+                                                    <img
+                                                        src="{{ URL::asset('layouts/assets/imgs/banner/menu-banner-4.jpg') }}"
+                                                        alt="menu_banner1">
                                                     <div class="banne_info">
                                                         <h6>10% Off</h6>
                                                         <h4>New Arrival</h4>
@@ -277,7 +307,8 @@
                                     </div>
                                 </li>
                                 <li class="has-children">
-                                    <a href="shop.html"><i class="surfsidemedia-font-smartphone"></i> Cellphones</a>
+                                    <a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-smartphone"></i>
+                                        Cellphones</a>
                                     <div class="dropdown-menu">
                                         <ul class="mega-menu d-lg-flex">
                                             <li class="mega-menu-col col-lg-7">
@@ -328,7 +359,9 @@
                                             </li>
                                             <li class="mega-menu-col col-lg-5">
                                                 <div class="header-banner2">
-                                                    <img src="{{ URL::asset('layouts/assets/imgs/banner/menu-banner-5.jpg') }}" alt="menu_banner1">
+                                                    <img
+                                                        src="{{ URL::asset('layouts/assets/imgs/banner/menu-banner-5.jpg') }}"
+                                                        alt="menu_banner1">
                                                     <div class="banne_info">
                                                         <h6>10% Off</h6>
                                                         <h4>New Arrival</h4>
@@ -336,7 +369,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="header-banner2">
-                                                    <img src="{{ URL::asset('layouts/assets/imgs/banner/menu-banner-6.jpg') }}" alt="menu_banner2">
+                                                    <img
+                                                        src="{{ URL::asset('layouts/assets/imgs/banner/menu-banner-6.jpg') }}"
+                                                        alt="menu_banner2">
                                                     <div class="banne_info">
                                                         <h6>15% Off</h6>
                                                         <h4>Hot Deals</h4>
@@ -347,26 +382,37 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-desktop"></i>Computer & Office</a>
+                                <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-desktop"></i>Computer
+                                        & Office</a>
                                 </li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-cpu"></i>Consumer Electronics</a>
+                                <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-cpu"></i>Consumer
+                                        Electronics</a>
                                 </li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-diamond"></i>Jewelry & Accessories</a>
+                                <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-diamond"></i>Jewelry
+                                        & Accessories</a>
                                 </li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-home"></i>Home & Garden</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-high-heels"></i>Shoes</a></li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-teddy-bear"></i>Mother & Kids</a>
+                                <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-home"></i>Home &
+                                        Garden</a></li>
+                                <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-high-heels"></i>Shoes</a>
                                 </li>
-                                <li><a href="shop.html"><i class="surfsidemedia-font-kite"></i>Outdoor fun</a></li>
+                                <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-teddy-bear"></i>Mother
+                                        & Kids</a>
+                                </li>
+                                <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-kite"></i>Outdoor
+                                        fun</a></li>
                                 <li>
                                     <ul class="more_slide_open" style="display: none;">
-                                        <li><a href="shop.html"><i class="surfsidemedia-font-desktop"></i>Beauty, Health</a>
+                                        <li><a href="{{ URL::route('shop') }}"><i
+                                                    class="surfsidemedia-font-desktop"></i>Beauty, Health</a>
                                         </li>
-                                        <li><a href="shop.html"><i class="surfsidemedia-font-cpu"></i>Bags and Shoes</a>
+                                        <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-cpu"></i>Bags
+                                                and Shoes</a>
                                         </li>
-                                        <li><a href="shop.html"><i class="surfsidemedia-font-diamond"></i>Consumer
+                                        <li><a href="{{ URL::route('shop') }}"><i
+                                                    class="surfsidemedia-font-diamond"></i>Consumer
                                                 Electronics</a></li>
-                                        <li><a href="shop.html"><i class="surfsidemedia-font-home"></i>Automobiles &
+                                        <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-home"></i>Automobiles
+                                                &
                                                 Motorcycles</a></li>
                                     </ul>
                                 </li>
@@ -377,9 +423,9 @@
                     <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block">
                         <nav>
                             <ul>
-                                <li><a class="active" href="index.html">Home </a></li>
+                                <li><a class="active" href="{{ URL::route('home.index') }}">Home </a></li>
                                 <li><a href="about.html">About</a></li>
-                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="{{ URL::route('shop') }}">Shop</a></li>
                                 <li class="position-static"><a href="#">Our Collections <i class="fi-rs-angle-down"></i></a>
                                     <ul class="mega-menu">
                                         <li class="sub-mega-menu sub-mega-menu-width-22">
@@ -442,15 +488,22 @@
                                 <li><a href="blog.html">Blog </a></li>
                                 <li><a href="contact.html">Contact</a></li>
                                 <li><a href="#">My Account<i class="fi-rs-angle-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">Dashboard</a></li>
-                                        <li><a href="#">Products</a></li>
-                                        <li><a href="#">Categories</a></li>
-                                        <li><a href="#">Coupons</a></li>
-                                        <li><a href="#">Orders</a></li>
-                                        <li><a href="#">Customers</a></li>
-                                        <li><a href="#">Logout</a></li>
-                                    </ul>
+                                    @auth
+                                        @if(Auth::user()->utype == 'ADM')
+                                            <ul class="sub-menu">
+                                                <li><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+                                                <li><a href="#">Products</a></li>
+                                                <li><a href="#">Categories</a></li>
+                                                <li><a href="#">Coupons</a></li>
+                                                <li><a href="#">Orders</a></li>
+                                                <li><a href="#">Customers</a></li>
+                                            </ul>
+                                        @else
+                                            <ul class="sub-menu">
+                                                <li><a href="{{ route('user.dashboard') }}">Dashboard</a></li>
+                                            </ul>
+                                        @endif
+                                    @endauth
                                 </li>
                             </ul>
                         </nav>
@@ -464,13 +517,15 @@
                     <div class="header-action-2">
                         <div class="header-action-icon-2">
                             <a href="shop-wishlist.php">
-                                <img alt="Surfside Media" src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-heart.svg') }}">
+                                <img alt="Surfside Media"
+                                     src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-heart.svg') }}">
                                 <span class="pro-count white">4</span>
                             </a>
                         </div>
                         <div class="header-action-icon-2">
-                            <a class="mini-cart-icon" href="cart.html">
-                                <img alt="Surfside Media" src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-cart.svg') }}">
+                            <a class="mini-cart-icon" href="{{ URL::route('shop.cart') }}">
+                                <img alt="Surfside Media"
+                                     src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-cart.svg') }}">
                                 <span class="pro-count white">2</span>
                             </a>
                             <div class="cart-dropdown-wrap cart-dropdown-hm2">
@@ -507,7 +562,7 @@
                                         <h4>Total <span>$383.00</span></h4>
                                     </div>
                                     <div class="shopping-cart-button">
-                                        <a href="cart.html">View cart</a>
+                                        <a href="{{ URL::route('shop.cart') }}">View cart</a>
                                         <a href="shop-checkout.php">Checkout</a>
                                     </div>
                                 </div>
@@ -530,7 +585,8 @@
     <div class="mobile-header-wrapper-inner">
         <div class="mobile-header-top">
             <div class="mobile-header-logo">
-                <a href="index.html"><img src="{{ URL::asset('layouts/assets/imgs/logo/logo.png') }}" alt="logo"></a>
+                <a href="{{ URL::route('home.index') }}"><img
+                        src="{{ URL::asset('layouts/assets/imgs/logo/logo.png') }}" alt="logo"></a>
             </div>
             <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
                 <button class="close-style search-close">
@@ -553,15 +609,24 @@
                     </a>
                     <div class="categori-dropdown-wrap categori-dropdown-active-small">
                         <ul>
-                            <li><a href="shop.html"><i class="surfsidemedia-font-dress"></i>Women's Clothing</a></li>
-                            <li><a href="shop.html"><i class="surfsidemedia-font-tshirt"></i>Men's Clothing</a></li>
-                            <li><a href="shop.html"><i class="surfsidemedia-font-smartphone"></i> Cellphones</a></li>
-                            <li><a href="shop.html"><i class="surfsidemedia-font-desktop"></i>Computer & Office</a></li>
-                            <li><a href="shop.html"><i class="surfsidemedia-font-cpu"></i>Consumer Electronics</a></li>
-                            <li><a href="shop.html"><i class="surfsidemedia-font-home"></i>Home & Garden</a></li>
-                            <li><a href="shop.html"><i class="surfsidemedia-font-high-heels"></i>Shoes</a></li>
-                            <li><a href="shop.html"><i class="surfsidemedia-font-teddy-bear"></i>Mother & Kids</a></li>
-                            <li><a href="shop.html"><i class="surfsidemedia-font-kite"></i>Outdoor fun</a></li>
+                            <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-dress"></i>Women's
+                                    Clothing</a></li>
+                            <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-tshirt"></i>Men's
+                                    Clothing</a></li>
+                            <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-smartphone"></i>
+                                    Cellphones</a></li>
+                            <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-desktop"></i>Computer &
+                                    Office</a></li>
+                            <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-cpu"></i>Consumer
+                                    Electronics</a></li>
+                            <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-home"></i>Home & Garden</a>
+                            </li>
+                            <li><a href="{{ URL::route('shop') }}"><i
+                                        class="surfsidemedia-font-high-heels"></i>Shoes</a></li>
+                            <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-teddy-bear"></i>Mother &
+                                    Kids</a></li>
+                            <li><a href="{{ URL::route('shop') }}"><i class="surfsidemedia-font-kite"></i>Outdoor
+                                    fun</a></li>
                         </ul>
                     </div>
                 </div>
@@ -569,8 +634,9 @@
                 <nav>
                     <ul class="mobile-menu">
                         <li class="menu-item-has-children"><span class="menu-expand"></span><a
-                                href="index.html">Home</a></li>
-                        <li class="menu-item-has-children"><span class="menu-expand"></span><a href="shop.html">shop</a>
+                                href="{{ URL::route('home.index') }}">Home</a></li>
+                        <li class="menu-item-has-children"><span class="menu-expand"></span><a
+                                href="{{ URL::route('shop') }}">shop</a>
                         </li>
                         <li class="menu-item-has-children"><span class="menu-expand"></span><a href="#">Our
                                 Collections</a>
@@ -622,10 +688,10 @@
                     <a href="contact.html"> Our location </a>
                 </div>
                 <div class="single-mobile-header-info">
-                    <a href="login.html">Log In </a>
+                    <a href="{{ URL::route('login') }}">Log In </a>
                 </div>
                 <div class="single-mobile-header-info">
-                    <a href="register.html">Sign Up</a>
+                    <a href="{{ URL::route('register') }}">Sign Up</a>
                 </div>
                 <div class="single-mobile-header-info">
                     <a href="#">(+1) 0000-000-000 </a>
@@ -635,8 +701,10 @@
                 <h5 class="mb-15 text-grey-4">Follow Us</h5>
                 <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-facebook.svg') }}" alt=""></a>
                 <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-twitter.svg') }}" alt=""></a>
-                <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-instagram.svg') }}" alt=""></a>
-                <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-pinterest.svg') }}" alt=""></a>
+                <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-instagram.svg') }}"
+                                 alt=""></a>
+                <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-pinterest.svg') }}"
+                                 alt=""></a>
                 <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-youtube.svg') }}" alt=""></a>
             </div>
         </div>
@@ -650,7 +718,8 @@
                 <div class="col-lg-7 mb-md-3 mb-lg-0">
                     <div class="row align-items-center">
                         <div class="col flex-horizontal-center">
-                            <img class="icon-email" src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-email.svg') }}" alt="">
+                            <img class="icon-email"
+                                 src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-email.svg') }}" alt="">
                             <h4 class="font-size-20 mb-0 ml-3">Sign up to Newsletter</h4>
                         </div>
                         <div class="col my-4 my-md-0 des">
@@ -676,7 +745,8 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="widget-about font-md mb-md-5 mb-lg-0">
                         <div class="logo logo-width-1 wow fadeIn animated">
-                            <a href="index.html"><img src="{{ URL::asset('layouts/assets/imgs/logo/logo.png') }}" alt="logo"></a>
+                            <a href="{{ URL::route('home.index') }}"><img
+                                    src="{{ URL::asset('layouts/assets/imgs/logo/logo.png') }}" alt="logo"></a>
                         </div>
                         <h5 class="mt-20 mb-10 fw-600 text-grey-4 wow fadeIn animated">Contact</h5>
                         <p class="wow fadeIn animated">
@@ -690,11 +760,16 @@
                         </p>
                         <h5 class="mb-10 mt-30 fw-600 text-grey-4 wow fadeIn animated">Follow Us</h5>
                         <div class="mobile-social-icon wow fadeIn animated mb-sm-5 mb-md-0">
-                            <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-facebook.svg') }}" alt=""></a>
-                            <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-twitter.svg') }}" alt=""></a>
-                            <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-instagram.svg') }}" alt=""></a>
-                            <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-pinterest.svg') }}" alt=""></a>
-                            <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-youtube.svg') }}" alt=""></a>
+                            <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-facebook.svg') }}"
+                                             alt=""></a>
+                            <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-twitter.svg') }}"
+                                             alt=""></a>
+                            <a href="#"><img
+                                    src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-instagram.svg') }}" alt=""></a>
+                            <a href="#"><img
+                                    src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-pinterest.svg') }}" alt=""></a>
+                            <a href="#"><img src="{{ URL::asset('layouts/assets/imgs/theme/icons/icon-youtube.svg') }}"
+                                             alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -727,12 +802,14 @@
                                 <a href="#" class="hover-up mb-sm-4 mb-lg-0"><img class="active"
                                                                                   src="{{ URL::asset('layouts/assets/imgs/theme/app-store.jpg') }}"
                                                                                   alt=""></a>
-                                <a href="#" class="hover-up"><img src="{{ URL::asset('layouts/assets/imgs/theme/google-play.jpg') }}" alt=""></a>
+                                <a href="#" class="hover-up"><img
+                                        src="{{ URL::asset('layouts/assets/imgs/theme/google-play.jpg') }}" alt=""></a>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-12 mt-md-3 mt-lg-0">
                             <p class="mb-20 wow fadeIn animated">Secured Payment Gateways</p>
-                            <img class="wow fadeIn animated" src="{{ URL::asset('layouts/assets/imgs/theme/payment-method.png') }}" alt="">
+                            <img class="wow fadeIn animated"
+                                 src="{{ URL::asset('layouts/assets/imgs/theme/payment-method.png') }}" alt="">
                         </div>
                     </div>
                 </div>
