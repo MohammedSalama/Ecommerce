@@ -14,24 +14,25 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="table-responsive">
-                            <table class="table shopping-summery text-center clean">
-                                <thead>
-                                <tr class="main-heading">
-                                    <th scope="col">Image</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">Subtotal</th>
-                                    <th scope="col">Remove</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @if(Session::has('success_message'))
-                                    <div class="alert alert-success">
-                                        <strong>Success | {{ Session::get('success_message') }}</strong>
-                                    </div>
-                                @endif
-                                @if(Cart::count() > 0)
+                            @if(Session::has('success_message'))
+                                <div class="alert alert-success">
+                                    <strong>Success | {{ Session::get('success_message') }}</strong>
+                                </div>
+                            @endif
+                            @if(Cart::count() > 0)
+                                <table class="table shopping-summery text-center clean">
+                                    <thead>
+                                    <tr class="main-heading">
+                                        <th scope="col">Image</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Subtotal</th>
+                                        <th scope="col">Remove</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
                                     @foreach(Cart::content() as $item)
                                         <tr>
                                             <td class="image product-thumbnail"><img
@@ -49,29 +50,35 @@
                                                 <span>${{ $item->model->regular_price }} </span></td>
                                             <td class="text-center" data-title="Stock">
                                                 <div class="detail-qty border radius  m-auto">
-                                                    <a href="#" class="qty-down"><i class="fi-rs-angle-small-down"></i></a>
-                                                    <span class="qty-val">1</span>
-                                                    <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
+                                                    <a href="#" class="qty-down"
+                                                       wire:click.prevent="decreaseQuantity('{{$item->rowId}}')"><i
+                                                            class="fi-rs-angle-small-down"></i></a>
+                                                    <span class="qty-val">{{ $item->qty }}</span>
+                                                    <a href="#" class="qty-up"
+                                                       wire:click.prevent="increaseQuantity('{{$item->rowId}}')"><i
+                                                            class="fi-rs-angle-small-up"></i></a>
                                                 </div>
                                             </td>
                                             <td class="text-right" data-title="Cart">
                                                 <span>${{ $item->model->subtotal }} </span>
                                             </td>
                                             <td class="action" data-title="Remove"><a href="#" class="text-muted"><i
-                                                        class="fi-rs-trash"></i></a></td>
+                                                        class="fi-rs-trash"
+                                                        wire:click.prevent="destroy('{{ $item->rowId }}')"></i></a></td>
                                         </tr>
                                     @endforeach
-                                @else
-                                    <p>No Item in cart</p>
-                                @endif
 
-                                <tr>
-                                    <td colspan="6" class="text-end">
-                                        <a href="#" class="text-muted"> <i class="fi-rs-cross-small"></i> Clear Cart</a>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                                    <tr>
+                                        <td colspan="6" class="text-end">
+                                            <a href="#" class="text-muted" wire:click.prevent="clearAll()"> <i class="fi-rs-cross-small"></i> Clear Cart</a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            @else
+                                <p>No Item in cart</p>
+                            @endif
+
                         </div>
                         <div class="cart-action text-end">
                             <a class="btn  mr-10 mb-sm-15"><i class="fi-rs-shuffle mr-10"></i>Update Cart</a>
