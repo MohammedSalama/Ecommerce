@@ -12,6 +12,16 @@ class ShopComponent extends Component
     use WithPagination;
 
     /**
+     * @var int
+     */
+    public $pageSize = 12;
+
+    /**
+     * @var string
+     */
+    public $orderBy = "Default Sorting";
+
+    /**
      * @param $product_id
      * @param $product_name
      * @param $product_price
@@ -25,13 +35,44 @@ class ShopComponent extends Component
     }
 
     /**
+     * @param $size
+     * @return void
+     */
+    public function changePageSize($size)
+    {
+        $this->pageSize = $size;
+    }
+
+    /**
+     * @param $order
+     * @return void
+     */
+    public function changeOrderBy($order)
+    {
+        $this->orderBy = $order;
+    }
+
+    /**
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Foundation\Application
      */
     public function render()
     {
-        $products = Product::paginate(12);
+        if ($this->orderBy == 'Price: Low to High')
+        {
+            $products = Product::orderBy('regular_price','ASC')->paginate($this->pageSize);
+        }
+        elseif ($this->orderBy == 'Price: High to Low')
+        {
+            $products = Product::orderBy('regular_price','DESC')->paginate($this->pageSize);
+        }
+        elseif ($this->orderBy == 'Sort By Newness')
+        {
+            $products = Product::orderBy('created_at','DESC')->paginate($this->pageSize);
+        }
+        else
+        {
+            $products = Product::paginate($this->pageSize);
+        }
         return view('livewire.shop-component', ['products' => $products]);
     }
-
-
 }
