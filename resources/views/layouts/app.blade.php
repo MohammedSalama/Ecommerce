@@ -86,11 +86,7 @@
                             src="{{ URL::asset('layouts/assets/imgs/logo/logo.png') }}" alt="logo"></a>
                 </div>
                 <div class="header-right">
-                    <div class="search-style-1">
-                        <form action="#">
-                            <input type="text" placeholder="Search for items...">
-                        </form>
-                    </div>
+                    @livewire('header-search-component')
 
                     @livewire('cart-icon-component')
                 </div>
