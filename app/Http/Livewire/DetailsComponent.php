@@ -28,6 +28,8 @@ class DetailsComponent extends Component
     {
 //        dd($this->slug);
         $product = Product::where('slug',$this->slug)->first();
-        return view('livewire.details-component',['product' => $product]);
+        $rproducts = Product::where('category_id',$product->category_id)->inRandomOrder()->limit(4)->get();
+        $nproducts = Product::latest()->take(4)->get();
+        return view('livewire.details-component',['product' => $product, 'rproducts' => $rproducts , 'nproducts' => $nproducts]);
     }
 }
