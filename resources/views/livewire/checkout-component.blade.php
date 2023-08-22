@@ -3,7 +3,7 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="{{ URL::route('home.index') }}" rel="nofollow">Home</a>
+                    <a href="{{ route('home.index') }}" rel="nofollow">Home</a>
                     <span></span> Shop
                     <span></span> Checkout
                 </div>
@@ -690,7 +690,7 @@
                                     <tbody>
                                     <tr>
                                         <td class="image product-thumbnail"><img
-                                                src="{{ URL::asset('layouts/assets/imgs/shop/product-1-1.jpg') }}"
+                                                src="{{ asset('layouts/assets/imgs/shop/product-1-1.jpg') }}"
                                                 alt="#"></td>
                                         <td>
                                             <h5><a href="product-details.html">Yidarton Women Summer Blue</a></h5> <span
@@ -700,7 +700,7 @@
                                     </tr>
                                     <tr>
                                         <td class="image product-thumbnail"><img
-                                                src="{{ URL::asset('layouts/assets/imgs/shop/product-2-1.jpg') }}"
+                                                src="{{ asset('layouts/assets/imgs/shop/product-2-1.jpg') }}"
                                                 alt="#"></td>
                                         <td>
                                             <h5><a href="product-details.html">LDB MOON Women Summe</a></h5> <span
@@ -710,7 +710,7 @@
                                     </tr>
                                     <tr>
                                         <td class="image product-thumbnail"><img
-                                                src="{{ URL::asset('layouts/assets/imgs/shop/product-3-1.jpg') }}"
+                                                src="{{ asset('layouts/assets/imgs/shop/product-3-1.jpg') }}"
                                                 alt="#"></td>
                                         <td><i class="ti-check-box font-small text-muted mr-10"></i>
                                             <h5><a href="product-details.html">Women's Short Sleeve Loose</a></h5> <span
