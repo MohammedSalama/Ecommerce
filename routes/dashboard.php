@@ -32,8 +32,6 @@ Route::prefix('dashboard')->group(function () {
     Route::get('/cart', CartComponent::class)->name('shop.cart');
 
 
-
-
     Route::get('/user', UserDashboardComponent::class)
         ->name('user.dashboard')->middleware(['auth']);
 });
