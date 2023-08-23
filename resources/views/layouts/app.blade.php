@@ -801,5 +801,6 @@
 <script src="{{ URL::asset('layouts/assets/js/main.js?v=3.3') }}"></script>
 <script src="{{ URL::asset('layouts/assets/js/shop.js?v=3.3') }}"></script>
 @livewireScripts
+@stack('scripts')
 </body>
 </html>
