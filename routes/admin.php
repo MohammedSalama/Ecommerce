@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Admin\AdminCategoriesComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use Illuminate\Support\Facades\Route;
 
@@ -16,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->middleware(['auth', 'authadmin'])->group(function () {
     Route::get('/', AdminDashboardComponent::class)->name('admin.dashboard');
+    Route::get('/categories',AdminCategoriesComponent::class)->name('admin.categories');
 });
