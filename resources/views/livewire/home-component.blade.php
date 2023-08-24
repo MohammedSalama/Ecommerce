@@ -132,7 +132,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -175,7 +175,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -218,7 +218,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -261,7 +261,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -304,7 +304,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -347,7 +347,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -390,7 +390,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -432,7 +432,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -478,7 +478,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -521,7 +521,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -564,7 +564,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -607,7 +607,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -650,7 +650,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -693,7 +693,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -736,7 +736,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -778,7 +778,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -824,7 +824,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -867,7 +867,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -910,7 +910,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -953,7 +953,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -996,7 +996,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -1039,7 +1039,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -1082,7 +1082,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -1124,7 +1124,7 @@
                                                data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
                                                     class="fi-rs-eye"></i></a>
                                             <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                               href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                               href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i
                                                     class="fi-rs-shuffle"></i></a>
                                         </div>
@@ -1285,7 +1285,7 @@
                                        data-bs-target="#quickViewModal">
                                         <i class="fi-rs-eye"></i></a>
                                     <a aria-label="Add To Wishlist" class="action-btn small hover-up"
-                                       href="wishlist.php" tabindex="0"><i class="fi-rs-heart"></i></a>
+                                       href="{{ route('shop.wishlist') }}" tabindex="0"><i class="fi-rs-heart"></i></a>
                                     <a aria-label="Compare" class="action-btn small hover-up" href="compare.php"
                                        tabindex="0"><i class="fi-rs-shuffle"></i></a>
                                 </div>
@@ -1319,7 +1319,7 @@
                                        data-bs-target="#quickViewModal">
                                         <i class="fi-rs-eye"></i></a>
                                     <a aria-label="Add To Wishlist" class="action-btn small hover-up"
-                                       href="wishlist.php" tabindex="0"><i class="fi-rs-heart"></i></a>
+                                       href="{{ route('shop.wishlist') }}" tabindex="0"><i class="fi-rs-heart"></i></a>
                                     <a aria-label="Compare" class="action-btn small hover-up" href="compare.php"
                                        tabindex="0"><i class="fi-rs-shuffle"></i></a>
                                 </div>
@@ -1353,7 +1353,7 @@
                                        data-bs-target="#quickViewModal">
                                         <i class="fi-rs-eye"></i></a>
                                     <a aria-label="Add To Wishlist" class="action-btn small hover-up"
-                                       href="wishlist.php" tabindex="0"><i class="fi-rs-heart"></i></a>
+                                       href="{{ route('shop.wishlist') }}" tabindex="0"><i class="fi-rs-heart"></i></a>
                                     <a aria-label="Compare" class="action-btn small hover-up" href="compare.php"
                                        tabindex="0"><i class="fi-rs-shuffle"></i></a>
                                 </div>
@@ -1387,7 +1387,7 @@
                                        data-bs-target="#quickViewModal">
                                         <i class="fi-rs-eye"></i></a>
                                     <a aria-label="Add To Wishlist" class="action-btn small hover-up"
-                                       href="wishlist.php" tabindex="0"><i class="fi-rs-heart"></i></a>
+                                       href="{{ route('shop.wishlist') }}" tabindex="0"><i class="fi-rs-heart"></i></a>
                                     <a aria-label="Compare" class="action-btn small hover-up" href="compare.php"
                                        tabindex="0"><i class="fi-rs-shuffle"></i></a>
                                 </div>
@@ -1421,7 +1421,7 @@
                                        data-bs-target="#quickViewModal">
                                         <i class="fi-rs-eye"></i></a>
                                     <a aria-label="Add To Wishlist" class="action-btn small hover-up"
-                                       href="wishlist.php" tabindex="0"><i class="fi-rs-heart"></i></a>
+                                       href="{{ route('shop.wishlist') }}" tabindex="0"><i class="fi-rs-heart"></i></a>
                                     <a aria-label="Compare" class="action-btn small hover-up" href="compare.php"
                                        tabindex="0"><i class="fi-rs-shuffle"></i></a>
                                 </div>
@@ -1455,7 +1455,7 @@
                                        data-bs-target="#quickViewModal">
                                         <i class="fi-rs-eye"></i></a>
                                     <a aria-label="Add To Wishlist" class="action-btn small hover-up"
-                                       href="wishlist.php" tabindex="0"><i class="fi-rs-heart"></i></a>
+                                       href="{{ route('shop.wishlist') }}" tabindex="0"><i class="fi-rs-heart"></i></a>
                                     <a aria-label="Compare" class="action-btn small hover-up" href="compare.php"
                                        tabindex="0"><i class="fi-rs-shuffle"></i></a>
                                 </div>
@@ -1489,7 +1489,7 @@
                                        data-bs-target="#quickViewModal">
                                         <i class="fi-rs-eye"></i></a>
                                     <a aria-label="Add To Wishlist" class="action-btn small hover-up"
-                                       href="wishlist.php" tabindex="0"><i class="fi-rs-heart"></i></a>
+                                       href="{{ route('shop.wishlist') }}" tabindex="0"><i class="fi-rs-heart"></i></a>
                                     <a aria-label="Compare" class="action-btn small hover-up" href="compare.php"
                                        tabindex="0"><i class="fi-rs-shuffle"></i></a>
                                 </div>
