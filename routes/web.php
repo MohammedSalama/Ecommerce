@@ -1,10 +1,5 @@
 <?php
 
-use App\Http\Livewire\CartComponent;
-use App\Http\Livewire\CheckoutComponent;
-use App\Http\Livewire\HomeComponent;
-use App\Http\Livewire\ShopComponent;
-use App\Http\Livewire\User\UserDashboardComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
