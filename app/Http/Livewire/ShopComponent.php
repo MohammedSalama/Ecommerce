@@ -76,6 +76,10 @@ class ShopComponent extends Component
         $this->emitTo('wishlist-icon-component','refreshComponent');
     }
 
+    /**
+     * @param $product_id
+     * @return void
+     */
     public function removeFromWishlist($product_id)
     {
         foreach (Cart::instance('wishlist')->content() as $witem)
