@@ -7,11 +7,13 @@
         nav .hidden {
             display: block;
         }
-        .wishlisted{
+
+        .wishlisted {
             background-color: #F15412 !important;
             border: 1px solid transparent !important;
         }
-        .wishlisted i{
+
+        .wishlisted i {
             color: #fff !important;
         }
     </style>
@@ -107,7 +109,7 @@
                                                    data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                                     <i class="fi-rs-search"></i></a>
                                                 <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                                   href="{{ route('shop.wishlist') }}"><i class="fi-rs-heart"></i></a>
+                                                   href="wishlist.php"><i class="fi-rs-heart"></i></a>
                                                 <a aria-label="Compare" class="action-btn hover-up"
                                                    href="compare.php"><i
                                                         class="fi-rs-shuffle"></i></a>
@@ -134,11 +136,16 @@
                                             </div>
                                             <div class="product-action-1 show">
                                                 @if($witems->contains($product->id))
-                                                    <a aria-label="Remove From Wishlist" class="action-btn hover-up wishlisted"
-                                                       href="#" wire:click.prevent="removeFromWishlist({{ $product->id }})"><i class="fi-rs-heart"></i></a>
+                                                    <a aria-label="Remove From Wishlist"
+                                                       class="action-btn hover-up wishlisted"
+                                                       href="#"
+                                                       wire:click.prevent="removeFromWishlist({{ $product->id }})"><i
+                                                            class="fi-rs-heart"></i></a>
                                                 @else
                                                     <a aria-label="Add To Wishlist" class="action-btn hover-up"
-                                                   href="#" wire:click.prevent="addToWishlist({{ $product->id }}, '{{ $product->name }}' , {{ $product->regular_price }})"><i class="fi-rs-heart"></i></a>
+                                                       href="#"
+                                                       wire:click.prevent="addToWishlist({{ $product->id }}, '{{ $product->name }}' , {{ $product->regular_price }})"><i
+                                                            class="fi-rs-heart"></i></a>
                                                 @endif
 
                                                 <a aria-label="Add To Cart" class="action-btn hover-up"
@@ -299,8 +306,8 @@
                 values: [0, 1000],
                 slide: function (event, ui) {
                     // amountprice.val("$" + ui.values[0] + " - $" + ui.values[1]);
-                    @this.set('min_value',ui.values(0));
-                    @this.set('max_value',ui.values(1));
+                @this.set('min_value', ui.values(0));
+                @this.set('max_value', ui.values(1));
                 }
             });
 
