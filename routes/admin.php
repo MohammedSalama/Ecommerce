@@ -24,5 +24,5 @@ Route::prefix('admin')->middleware(['auth', 'authadmin'])->group(function () {
     Route::get('/category/add', AdminAddCategoryComponent::class)->name('admin.category.add');
     Route::get('/category/edit/{category_id}', AdminEditCategoryComponent::class)->name('admin.category.edit');
     Route::get('/products', AdminProductComponent::class)->name('admin.products');
-
+    Route::get('/product/add', AdminProductComponent::class)->name('admin.product.add');
 });
