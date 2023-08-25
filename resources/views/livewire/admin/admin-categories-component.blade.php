@@ -53,7 +53,7 @@
                                             <td>{{ $category->name }}</td>
                                             <td>{{ $category->slug }}</td>
                                             <td>
-                                                <a href=""></a>
+                                                <a href="{{ route('admin.category.edit',['category_id' => $category->id]) }}" class="text-info">Edit</a>
                                                 <a href=""></a>
                                             </td>
                                         </tr>
