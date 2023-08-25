@@ -42,7 +42,7 @@ class AdminAddCategoryComponent extends Component
     /**
      * @return void
      */
-    public function storeCateory()
+    public function storeCategory()
     {
         $this->validate([
             'name' => 'required',
